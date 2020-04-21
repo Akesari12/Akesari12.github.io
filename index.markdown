@@ -1,0 +1,15 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: page
+---
+
+<img src="headshot.jpg" width = "300" align = "right" style="float:right; margin-left: 25px">
+
+<p align = "justify" style = "overflow: hidden">
+Hello! I am a JD Candidate at <a href = "https://law.yale.edu/">Yale Law School</a>, and recently completed my PhD at <a href = "https://www.law.berkeley.edu/">Berkeley Law </a> where I specialized in Law & Economics. At Berkeley, I was a recipient of a <a href = "https://dlab.berkeley.edu/">D-Lab</a> Data Science Fellowship, a research fellowship from the <a href = "https://www.law.berkeley.edu/research/leap/">Law, Economics, and Politics Center</a>. I was also a <a href = "https://www.google.com/policyfellowship/">Google Policy Fellow</a> at <a href = "https://www.engine.is/">Engine</a>, a <a href = "https://www.dssgfellowship.org/">Data Science for Social Good Fellow</a> at the University of Chicago, an a Technology Policy Intern at <a href = "https://internships.github.com/">GitHub</a>.
+<br>
+<br>
+My primary research interests are in law & technology, data science, and public policy. My current research explores using data science to address questions in privacy and cybercrime law. I am particularly interested in using methods drawn from machine learning, natural language processing, and causal inference to explore open empirical questions in U.S. data protection law. I am also interested in integrating data science into empirical legal studies more broadly, and have co-taught a <a href = "https://github.com/Akesari12/LS123_Data_Prediction_Law_Spring-2019">Data, Prediction, and Law</a> course for the undergraduate Legal Studies and Data Science programs at Berkeley.
+</p>
