@@ -5,6 +5,8 @@
 layout: page
 ---
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <img src="headshot.JPG" width = "300" align = "right" style="float:right; margin-left: 25px">
 
 <p align = "justify" style = "overflow: hidden">
