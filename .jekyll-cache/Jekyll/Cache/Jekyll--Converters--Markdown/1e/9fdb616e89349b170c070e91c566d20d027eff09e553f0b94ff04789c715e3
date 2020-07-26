@@ -1,0 +1,81 @@
+I"�!<h4 style="color:black; margin-bottom:0px">Predicting Cybersecurity Incidents Through Mandatory Disclosure Regulation</h4>
+<p align="justify" style="margin-top: 0px; font-size:12px"><b>Working Paper</b>
+	<br />
+      Cybercrime is an increasingly common risk for organizations that collect and maintain vast troves of data. There is extensive literature that explores the causes of cybercrime, but relatively little work that aims to predict future incidents. In 2011, the United States Securities and Exchange Commission (SEC)  provided guidelines for how publicly traded companies should convey these risks to potential investors. The SEC and other regulatory agencies are exploring how to leverage artificial intelligence, machine learning, and data science tools to improve their regulatory efforts. This paper explores the potential to use machine learning and natural language processing techniques to analyze firms' mandatory risk disclosure statements, and predict which firms are at the greatest risk of suffering cybersecurity incidents. More broadly, this study highlights the potential for using legally mandated disclosures to bolster regulatory efforts, particularly in the context of prediction policy problems.   
+	</p>
+
+<h4 style="color:black; margin-bottom:0px">The Effect of State Data Breach Notification Laws on Medical Identity Theft</h4>
+<p align="justify" style="margin-top: 0px; font-size:12px"><b>Working Paper</b>
+	<br />
+    As the number of data breaches in the United States grows each year, cybersecurity has become an increasingly important policy area. The primary mechanism for regulating and deterring data breaches is the "data breach notification law." Every U.S. state now has such a law that mandates that certain organizations disclose data breaches to their data subjects. Despite the popularity of these laws, there is relatively little evidence about their effectiveness at deterring breaches, and therefore reducing identity theft. Using medical identity theft panel data collected from the Consumer Financial Protection Bureau (CFPB), this study implements an augmented synthetic control approach to analyze the effect of certain data breach notification standards on medical identity theft. 
+	</p>
+
+<h4 style="color:black; margin-bottom:0px">Trademarks, AI, and Search Costs</h4>
+<p align="justify" style="margin-top: 0px; font-size:12px"><b>Forthcoming, Berkeley Technology Law Journal (2020)</b>
+	<br />
+	In this Article, we aim to study how well these search engines identify potential conflicts under Section 2(d) of the Trademark Act, 15 U.S.C. §1052(d),  which forbids the registration of a trademark that is “confusingly similar” to an existing registered trademark. While a traditional trademark applicant might rely on government-supported techniques (the TESS system) for searching for confusingly similar marks, it turns out that they are often incomplete. Today, because of these various gaps in TESS, several private trademark search engines have emerged to supplement TESS and provide more thorough results. These search engines generally aim to provide a user with a more comprehensive list of potential mark conflicts and recommend whether the user should proceed with their trademark application. Each search engine uses its own methods, algorithms, and techniques to return results. Our study aims to answer the question of which search engines do the best job of returning the most relevant results to a user, and why. We then use our findings to demonstrate how our results potentially affect trademark law by demonstrating the emergence of search costs that are born by the trademark registrant, rather than the consumer.
+	<br />
+	<i>With Sonia Katyal</i></p>
+
+<h4 style="color:blue; margin-bottom:0px"><a href="https://arxiv.org/abs/1812.01106">Improving Traffic Safety Through Video Analysis in Jakarta, Indonesia</a></h4>
+<p align="justify" style="margin-top: 0px; font-size:12px"><b>Neural Information Processing Systems (NeurIPS) AI For Social Good Workshop</b>
+	<br />
+	This project presents the results of a partnership between the Data Science for Social Good fellowship, Jakarta Smart City and Pulse Lab Jakarta to create a video analysis pipeline for the purpose of improving traffic safety in Jakarta. The pipeline transforms raw traffic video footage into databases that are ready to be used for traffic analysis. By analyzing these patterns, the city of Jakarta will better understand how human behavior and built infrastructure contribute to traffic challenges and safety risks. The results of this work should also be broadly applicable to smart city initiatives around the globe as they improve urban planning and sustainability through data science approaches.
+	<br />
+	<i> With Joao Caldeira, Alex Fout, and Raesetje Sefala et. al.</i></p>
+
+<h4 style="color:blue; margin-bottom:0px"><a href="https://www.gwlr.org/wp-content/uploads/2019/10/87-Geo.-Wash.-L.-Rev.-783.pdf">The Tethered Economy</a></h4>
+<p align="justify" style="margin-top: 0px; font-size:12px"><b>George Washington Law Review (2019)</b>
+	<br />
+	Imagine a future in which every purchase decision is as complex as
+	choosing a mobile phone. What will ongoing service cost? Is it compatible
+	with other devices you use? Can you move data and applications across devices? Can you switch providers? These are just some of the questions one
+	must consider when a product is “tethered” or persistently linked to the seller.
+	The Internet of Things, but more broadly, consumer products with embedded
+	software, are already tethered.
+	<br />
+	<br />
+	While tethered products bring the benefits of connection, they also carry
+	its pathologies. As sellers blend hardware and software—as well as product
+	and service—tethers yoke the consumer to a continuous post-transaction relationship with the seller. The consequences of that dynamic will be felt both at
+	the level of individual consumer harms and on the scale of broader, economywide effects. These consumer and market-level harms, while distinct, reinforce
+	and amplify one another in troubling ways.
+	<br />
+	<br />
+	Seller contracts have long sought to shape consumers’ legal rights. But in
+	a tethered environment, these rights may become nonexistent as legal
+	processes are replaced with automated technological enforcement. In such an
+	environment, the consumer-seller relationship becomes extractive, more akin
+	to consumers captive in an amusement park than to a competitive marketplace
+	in which many sellers strive to offer the best product for the lowest price.
+	<br />
+	<br />
+	At the highest level, consumer protection law is concerned with promoting functioning free markets and insulating consumers from harms stemming
+	from information asymmetries. We conclude by exploring legal options to reduce the pathologies of the tethered economy.
+	<br />
+	<i>With Chris Hoofnagle and Aaron Perzanowski</i></p>
+
+<h4 style="color:blue; margin-bottom:0px"><a href="https://btlj.org/data/articles2017/vol32/32_3/Hoofnagle_web.pdf">Deterring Cybercrime: Focus on Intermediaries</a></h4>
+<p align="justify" style="margin-top: 0px; font-size:12px"><b>Berkeley Technology Law Review (2018)</b>
+	<br />
+	This Article discusses how governments, intellectual property owners, and
+	technology companies use the law to disrupt access to intermediaries used by financially–
+	motivated cybercriminals. Just like licit businesses, illicit firms rely on intermediaries to
+	advertise, sell and deliver products, collect payments, and maintain a reputation.
+	Recognizing these needs, law enforcers use the courts, administrative procedures, and
+	self–regulatory frameworks to execute a deterrence by denial strategy. Enforcers of the
+	law seize the financial rewards and infrastructures necessary for the operation of illicit
+	firms to deter their presence.
+	<br />
+	<br />
+	Policing illicit actors through their intermediaries raises due process and fairness
+	concerns because service–providing companies may not be aware of the criminal activity,
+	and because enforcement actions have consequences for consumers and other, licit firms.
+	Yet, achieving direct deterrence by punishment suffers from jurisdictional and resource
+	constraints, leaving enforcers with few other options for remedy. This Article integrates
+	literature from the computer science and legal fields to explain enforcers’ interventions,
+	explore their efficacy, and evaluate the merits and demerits of enforcement efforts
+	focused on the intermediaries used by financially–motivated cybercriminals. 
+	<br />
+	<i>With Chris Hoofnagle and Damon McCoy</i></p>
+:ET
