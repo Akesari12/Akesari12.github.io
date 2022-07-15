@@ -1,0 +1,84 @@
+/* colors from picker */
+  /* dummy {
+    color: #0F3443;
+    color: #186b49;
+    color: #dbe4df;
+    color: #550c18;
+    color: #a31621;
+  }
+ */
+
+  input, textarea, button, select {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Anek Tamil";
+    line-height: 0.8em;
+  }
+  ::-webkit-scrollbar { 
+    display: none; 
+    }
+  html, body {
+    min-height: 100%;
+  }
+  body {
+    background: linear-gradient(-8deg, #186b49 0%, #0F3443 75%);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+  }
+  p {
+    margin: 16px 0;
+    line-height: 1.2em;
+    color: #dbe4df;
+  }
+  h3 {
+    color: #dbe4df;
+  }
+  .content {
+    padding: 0px 20px;
+    color: #dbe4df;
+  }
+  /* layout */
+  .layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 0 0; */
+  }
+  footer {
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  /* nav a:hover {
+    border-color: rgb(218, 240, 213);
+  } */
+  footer p, footer span{
+    text-align: center;
+    color: #787f76;
+    margin: 15px auto;
+  }
+  .ryland {
+    margin-top: -15px;
+  }
+  footer p.ryland span#trrembert {
+    font-family: monospace;
+    font-size: 11px;
+    padding: 0 2px;
+    transition: padding 0.15s cubic-bezier(.3,.02,.34,1.7);
+  }
+  footer p.ryland span#trrembert:hover{
+    padding: 0 5px;
+    /* color: #dbe4df; */
+    cursor: help;
+  }
+
+  @media screen and (max-width: 670px) {
+    footer {
+      font-size: 10px;
+    }
+    .content {
+      padding: 0;
+     }
+  }
