@@ -1,1 +1,0 @@
-Aniket Kesari's [personal webpage](https://akesari12.github.io/). This template was forked from [SinglePaged](http://t413.com/SinglePaged)
