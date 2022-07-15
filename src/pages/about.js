@@ -49,7 +49,7 @@ export default function About({ data } ) {
                 </div>
                 <div className={styles.schoolsText}>
                   <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3>
-                  <h4 className={ styles.year}>2015</h4>
+                  <h4 className={ styles.year}>2014</h4>
                   <h4 className={ styles.degree}>B.A. Political Science & History</h4>
                 </div>
               </div>
@@ -69,13 +69,13 @@ export default function About({ data } ) {
                 </div> */}
                 <div className={styles.workText}>
                   {/* <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3> */}
-                  <h4 className={ styles.workTitle}>Postdoctoral Fellow</h4>
+                  <h4 className={ styles.workTitle}>Postdoctoral Research Fellow</h4>
                   <h4 className={ styles.degree}>NYU Information Law Institute</h4>
                 </div>
                 <div className={styles.workText}>
                   {/* <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3> */}
                   <h4 className={ styles.workTitle}>Visiting Postdoc</h4>
-                  <h4 className={ styles.degree}>ETH Zuric Center for Law and Economics</h4>
+                  <h4 className={ styles.degree}>ETH Zurich Center for Law and Economics</h4>
                 </div>
                 <div className={styles.workText}>
                   {/* <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3> */}
