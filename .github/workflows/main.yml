@@ -31,8 +31,8 @@ jobs:
       #    envkey_GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
 
       #This is required if public is in .gitignore, which it likely is
-      - name: Create public folder for build output
-        run: mkdir -p public
+      #- name: Create public folder for build output
+      #  run: mkdir -p public
 
       # Install packages
       - name: Run npm install
