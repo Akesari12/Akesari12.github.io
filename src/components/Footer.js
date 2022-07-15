@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer>
     <p>&copy; {new Date().getFullYear()} Aniket Kesari</p>
-    {/* <p className="ryland">a <span id="trrembert">trrembert</span> site</p> */}
+    <p className="ryland">a <span id="trrembert">trrembert</span> site</p> 
     </footer>
   )
 }
