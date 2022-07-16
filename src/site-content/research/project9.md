@@ -4,7 +4,7 @@ publication: "Job Market Paper"
 date: 2023-01-01
 collab: 
 thumb: 
-url-external: 
+url-external: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4164674
 youtube: 
 youtube-alt: 
 ---
