@@ -1,9 +1,9 @@
 ---
 title: "Do Data Breach Notification Laws Work?"
 publication: "Job Market Paper"
-date: 2023-01-01
+date: 2022-12-31
 collab: 
-thumb: 
+thumb: ../../site-content/images/first_law_map.png
 url-external: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4164674
 youtube: 
 youtube-alt: 
