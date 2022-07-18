@@ -3,8 +3,8 @@ title: "A Computational Law and Economics Toolkit for Balancing Privacy and Fair
 publication: "forthcoming, ACM Symposium on Law and Computer Science"
 date: 2022-11-02
 collab: 
-thumb: 
-url-external: ../../site-content/images/tpp_black.png
+thumb: ../../site-content/images/tpp_black.png
+url-external: 
 youtube: 
 youtube-alt: 
 ---

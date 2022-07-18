@@ -1,6 +1,6 @@
 ---
 title: home
-jobTitle: Postdoctoral Fellow
+jobTitle: Postdoctoral Research Fellow
 employer: "New York University"
 ---
 
