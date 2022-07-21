@@ -4,10 +4,6 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
-require(`dotenv`).config({
-   path: `.env`,
-})
-
 module.exports = {
   pathPrefix: "/aniket-test-site",
   /* Your site config here */
