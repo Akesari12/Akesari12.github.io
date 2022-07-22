@@ -17,29 +17,21 @@ export default function Teaching({ data }) {
           <>
           <div className={styles.projectBlock}>
             <div className={styles.projectInfo}>
-              {/* <h3 className={styles.projectTitle}> */}
-                <a className={ styles.projectTitle }
-                  href={ project.frontmatter.url_external }
-                  target="_blank" rel="noopener noreferrer">
-                    { project.frontmatter.title }</a>
-              {/* </h3> */}
+              { (project.frontmatter.github !== null )
+                  ? <a className={ styles.projectTitle } href={ project.frontmatter.url_external } target="_blank" rel="noopener noreferrer">{ project.frontmatter.title }</a>
+                  : <a className={ styles.projectTitleNoLink }>{ project.frontmatter.title }</a>
+              }
               <h4 className={styles.journalTitle}>{ project.frontmatter.years }</h4>
               <h4 className={styles.collaborators}> { project.frontmatter.course_level }</h4>
               { project.frontmatter.github !== null &&
-              <a className={ styles.github } href={ project.frontmatter.github } rel="noopener noreferrer">
-                <img src="logo_github.svg"/>
+              <a className={ styles.github } href={ project.frontmatter.github } 
+              target="_blank" rel="noopener noreferrer">
+                <img src="/logo_github.svg"/>
               </a>
               }
             </div>
-            {/* <h4 className={styles.pubDate}>{ project.frontmatter.years }</h4> */}
             <div className={styles.html} dangerouslySetInnerHTML={{ __html: project.html }} />
           </div>
-          {/* <div className={styles.expandButton}>
-            <input type="checkbox" class={styles.defaultButton} id={ project.id } />
-            <label class={styles.moreInfo} for={ project.id }>more info</label>
-            <span className={styles.plusSign}>close</span>
-            <div className={styles.html} dangerouslySetInnerHTML={{ __html: project.html }} />
-          </div> */}
           </>
         // </Link>
       ))}

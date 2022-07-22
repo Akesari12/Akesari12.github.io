@@ -20,7 +20,7 @@ export default function About({ data } ) {
             <div className={styles.schools}>
                 <div className={styles.schoolsLogo}>
                   <a href="https://law.yale.edu/" target="_blank" rel="noopener noreferrer">
-                    <img id={styles.logoYale} className={styles} src="logo_yale.svg" />    
+                    <img id={styles.logoYale} className={styles} src="/logo_yale.svg" />    
                   </a>
                 </div>
                 <div className={styles.schoolsText}>
@@ -32,7 +32,7 @@ export default function About({ data } ) {
               <div className={styles.schools}>
                 <div className={styles.schoolsLogo}>
                   <a href="https://www.law.berkeley.edu/" target="_blank" rel="noopener noreferrer">
-                    <img id={styles.logoBerkeley} className={styles} src="logo_berkeley.svg" />    
+                    <img id={styles.logoBerkeley} className={styles} src="/logo_berkeley.svg" />    
                   </a>
                 </div>
                 <div className={styles.schoolsText}>
@@ -44,7 +44,7 @@ export default function About({ data } ) {
               <div className={styles.schools}>  
                 <div className={styles.schoolsLogo}>
                   <a href="https://newbrunswick.rutgers.edu/" target="_blank" rel="noopener noreferrer">
-                    <img id={styles.logoRutgers} src="logo_rutgers.svg" />    
+                    <img id={styles.logoRutgers} src="/logo_rutgers.svg" />    
                   </a>
                 </div>
                 <div className={styles.schoolsText}>

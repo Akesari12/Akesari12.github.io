@@ -39,6 +39,17 @@ module.exports = {
     },
   },
   {
+    resolve: 'gatsby-plugin-gtag',
+    options: {
+      // google id
+      trackingId: 'G-8Z17HXHDQ8',
+      // inject into head or body
+      head: false,
+      // ip anonymization
+      anonymize: true,
+    }
+  },
+  {
     resolve: `gatsby-plugin-google-fonts`,
     options: {
       fonts: [

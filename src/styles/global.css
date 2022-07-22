@@ -73,6 +73,10 @@
     /* color: #dbe4df; */
     cursor: help;
   }
+  #pdftag {
+    min-width: 14px;
+    transform: translateY(2px);
+  }
 
   @media screen and (max-width: 670px) {
     footer {
@@ -81,4 +85,10 @@
     .content {
       padding: 0;
      }
+     footer p.ryland span#trrembert {
+      font-family: monospace;
+      font-size: 9px;
+      padding: 0 2px;
+      transition: padding 0.15s cubic-bezier(.3,.02,.34,1.7);
+    }
   }

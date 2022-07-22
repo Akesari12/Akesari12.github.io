@@ -245,7 +245,20 @@
       width: 105%;
       transform: translate(-7px, 0px);
     }
-
+    .inserted-html a::after {
+      content: '';
+      /* background-color: inherit; */
+      border: 3px solid #dbe4df;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 40px;
+      height: 75%;
+      width: 107%;
+      transform: translate(-10px, -1px);
+      z-index: -1;
+      /* transition: background-color 0.15 cubic-bezier(.3,.02,.34,1.7); */
+    }
     .home-title {
       display: flex;
       width: auto;
