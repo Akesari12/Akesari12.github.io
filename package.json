@@ -19,7 +19,6 @@
     "@fontsource/material-icons-rounded": "^4.5.4",
     "framer-motion": "^6.3.16",
     "gatsby": "^4.17.0",
-    "gatsby-plugin-google-gtag": "^4.5.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-sharp": "^4.17.0",
