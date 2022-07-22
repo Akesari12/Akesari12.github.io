@@ -8,11 +8,6 @@ module.exports = {
   pathPrefix: "/aniket-test-site",
   /* Your site config here */
   plugins: [
-      {
-          resolve: 'gatsby-plugin-google-analytics',
-          options: {
-                  trackingId: "G-8Z17HXHDQ8"
-       }},
     // 'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
