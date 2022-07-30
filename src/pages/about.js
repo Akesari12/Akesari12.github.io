@@ -38,7 +38,7 @@ export default function About({ data } ) {
                 <div className={styles.schoolsText}>
                   <h3 className={ styles.schoolName }>UC Berkeley</h3>
                   <h4 className={ styles.year}>2020</h4>
-                  <h4 className={ styles.degree}>Ph.D. Jurisprudence, School of Law</h4>
+                  <h4 className={ styles.degree}>Ph.D. Jurisprudence and Social Policy, School of Law</h4>
                 </div>
               </div>
               <div className={styles.schools}>  
