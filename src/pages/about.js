@@ -3,12 +3,15 @@ import React from 'react'
 import Layout from '../components/Layout'
 import * as styles from "../styles/about.module.css"
 import Img from 'gatsby-image'
+import Head from '../components/Head'
 
 export default function About({ data } ) {
   
   const queryAbout = data.allMarkdownRemark.nodes[0];
 
   return (
+    <>
+    <Head title="About"/>
     <Layout pageKey={'about'}>
           <h2 className={styles.pageTitle}>About</h2>
     <div>
@@ -107,6 +110,7 @@ export default function About({ data } ) {
         {/* hiiiii */}
     </div>
     </Layout>
+    </>
   )
 }
 

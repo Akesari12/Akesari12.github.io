@@ -22,6 +22,7 @@
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-gtag": "^1.0.13",
+    "gatsby-plugin-react-helmet": "^5.20.0",
     "gatsby-plugin-sharp": "^4.17.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-remove-root-p-tag": "^1.0.1",
@@ -30,6 +31,7 @@
     "gatsby-transformer-sharp": "^4.17.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^5.3.3"
   },
   "devDependencies": {

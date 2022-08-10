@@ -3,6 +3,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import * as styles from "../../styles/research.module.css"
 import Img from 'gatsby-image'
+import Head from '../../components/Head'
 
 export default function Research({ data }) {
 
@@ -12,6 +13,8 @@ export default function Research({ data }) {
   // console.log(projects, projects[0].frontmatter.date)
 
   return (
+    <>
+    <Head title="Research"/>
     <Layout>
     <h2 className={styles.pageTitle}>Research</h2>
     <div className={styles.container}>
@@ -49,6 +52,7 @@ export default function Research({ data }) {
       ))}
     </div>
     </Layout>
+    </>
   )
 }
 

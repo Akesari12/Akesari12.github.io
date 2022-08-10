@@ -3,12 +3,15 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import * as styles from "../../styles/teaching.module.css"
 import Img from 'gatsby-image'
+import Head from '../../components/Head'
 
 export default function Teaching({ data }) {
 
   const projects = data.allMarkdownRemark.nodes;
 
   return (
+    <>
+    <Head title="Teaching"/>
     <Layout>
     <h2 className={styles.pageTitle}>Teaching</h2>
     <div className={styles.container}>
@@ -37,6 +40,7 @@ export default function Teaching({ data }) {
       ))}
     </div>
     </Layout>
+    </>
   )
 }
 

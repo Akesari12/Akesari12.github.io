@@ -1,8 +1,11 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Head from '../components/Head'
 
 export default function NotFound() {
   return (
+    <>
+    <Head title="Oops!"/>
     <Layout>
     <div>
       <center>
@@ -15,5 +18,6 @@ export default function NotFound() {
         </center>
     </div>
     </Layout>
+    </>
   )
 }

@@ -3,12 +3,15 @@ import React , { useState, createContext } from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
 import Img from "gatsby-image"
+import Head from "../components/Head"
 
 export default function Home({data}) {
   const queryData = data.allMarkdownRemark.edges[0].node;
   const homeDescription = (queryData.html).slice(3,-4);
   
   return (
+    <>
+    <Head title=""/>
     <Layout pageKey={'home'}>
     <section className={styles.header}>
         <div className={styles.homeTitle}>
@@ -28,6 +31,7 @@ export default function Home({data}) {
         {/* <p>helloooooo</p> */}
     </section>
     </Layout>
+    </>
   )
 }
 
