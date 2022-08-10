@@ -50,7 +50,7 @@ export default function About({ data } ) {
                 <div className={styles.schoolsText}>
                   <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3>
                   <h4 className={ styles.year}>2014</h4>
-                  <h4 className={ styles.degree}>B.A. Political Science & History</h4>
+                  <h4 className={ styles.degree}>B.A. Political Science and History</h4>
                 </div>
               </div>
 

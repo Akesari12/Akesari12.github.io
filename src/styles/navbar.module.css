@@ -80,6 +80,12 @@ nav {
     transform: translateY(3px);
     padding-right: 5px;
   }
+  #icon-home, #icon-about, #icon-research, #icon-teaching, #icon-cv {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    /* transform: translateY(1px); */
+  }
   #icon-home {
     font-weight: normal;
     font-style: normal;
@@ -87,24 +93,30 @@ nav {
     /* transform: translateY(1px); */
   }
   #icon-about {
-    font-weight: normal;
+    /* font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 24px;  Preferred icon size */
     transform: translateY(2px);
   }
   #icon-teaching {
-    font-weight: normal;
+    /* font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 24px;  Preferred icon size */
     transform: translateY(0px);
   }
   #icon-research {
     font-weight: 800;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    /* font-style: normal;
+    font-size: 24px;  Preferred icon size */
     transform: translateY(3px);
   }
-
+  #icon-cv {
+    /* font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  Preferred icon size */
+    transform: translateY(3px) scale(1.2);
+    /* transform: scale(1.2); */
+  }
 
 
   @media screen and (max-width: 768px) {
@@ -120,9 +132,13 @@ nav {
       margin: 0 5px;
       font-size: 1.3em;
     }
-    #icon-home, #icon-about, #icon-teaching, #icon-research {
+    #icon-home, #icon-about, #icon-teaching, #icon-research, #icon-cv {
       font-size: 20px;  /* Preferred icon size */
       /* transform: translateY(1px); */
+    }
+    #icon-cv {
+      /* font-size: 20px; */
+      /* transform: scale(2); */
     }
   }
 
@@ -135,13 +151,51 @@ nav {
     nav .links > a {
       /* margin: 0 5px; */
       font-size: 1em;
-      /* font-weight: 800; */
+      font-weight: 500;
     }
-    #icon-home, #icon-about, #icon-teaching, #icon-research {
+    #icon-home, #icon-about, #icon-research, #icon-teaching, #icon-cv {
       font-size: 16px;  /* Preferred icon size */
       /* transform: translateY(1px); */
       /* content: ''; */
     }
+    #icon-teaching {
+      /* font-size: 15px; */
+      transform: translateY(1px);
+    }
+    #icon-cv {
+      /* font-size: 18px; */
+      transform: translateY(3px) scale(1.2);
+    }
     .hover-underline-animation:after {
       height: 2px;
+  }}
+
+  @media screen and (max-width: 400px) {
+    nav {
+      padding: 10px 4px;
+      margin-bottom: 10px;
+    }
+    nav .links > a {
+      /* margin: 0 5px; */
+      font-size: 0.9em;
+      font-weight: 600;
+    }
+    .material-symbols-rounded {
+      padding-right: 3px;
+    }
+    #icon-home, #icon-about, #icon-research, #icon-teaching, #icon-cv {
+      font-size: 16px;  /* Preferred icon size */
+      /* transform: translateY(1px); */
+      /* content: ''; */
+    }
+    #icon-teaching {
+      /* font-size: 15px; */
+      transform: translateY(1px);
+    }
+    #icon-cv {
+      /* font-size: 18px; */
+      transform: translateY(3px) scale(1.2);
+    }
+    .hover-underline-animation:after {
+      height: 1.5px;
   }}

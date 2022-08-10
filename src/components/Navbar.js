@@ -28,6 +28,7 @@ export default function Navbar() {
             <Link to="/about" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconAbout}>frame_person</span>About</Link>
             <Link to="/research" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconResearch}>gavel</span>Research</Link>
             <Link to="/teaching" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconTeaching}>edit_square</span>Teaching</Link>
+            <Link to="https://github.com/Akesari12/Akesari12.github.io/raw/dev/Aniket_Kesari_CV.pdf" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconCv}>history_edu</span>CV</Link>
         </div>
     </nav>
   )

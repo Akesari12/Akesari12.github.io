@@ -177,7 +177,7 @@
     .schools-text {
       display: flex;
       flex-wrap: wrap;
-      max-width: 300px;
+      max-width: 450px;
       /* flex-direction: row; */
       align-items: center;
       flex-grow: 1;
