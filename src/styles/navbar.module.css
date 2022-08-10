@@ -80,42 +80,33 @@ nav {
     transform: translateY(3px);
     padding-right: 5px;
   }
-  #icon-home, #icon-about, #icon-research, #icon-teaching, #icon-cv {
+  #icon-home::after, #icon-about::after, #icon-research::after, #icon-teaching::after, #icon-cv::after {
+    display: inline-block;
     font-weight: normal;
     font-style: normal;
     font-size: 24px;  /* Preferred icon size */
     /* transform: translateY(1px); */
   }
-  #icon-home {
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+  #icon-home::after {
+    content: "home";
     /* transform: translateY(1px); */
   }
-  #icon-about {
-    /* font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  Preferred icon size */
-    transform: translateY(2px);
+  #icon-about::after {
+    content: "frame_person";
+    /* transform: translateY(2px); */
   }
-  #icon-teaching {
-    /* font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  Preferred icon size */
-    transform: translateY(0px);
-  }
-  #icon-research {
+  #icon-research::after {
+    content: "gavel";
     font-weight: 800;
-    /* font-style: normal;
-    font-size: 24px;  Preferred icon size */
-    transform: translateY(3px);
+    /* transform: translateY(3px); */
   }
-  #icon-cv {
-    /* font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  Preferred icon size */
-    transform: translateY(3px) scale(1.2);
-    /* transform: scale(1.2); */
+  #icon-teaching::after {
+    content: "edit_square";
+    transform: translateY(-1px);
+  }
+  #icon-cv::after {
+    content: "history_edu";
+    transform: translateY(0px) scale(1.2);
   }
 
 
@@ -132,11 +123,11 @@ nav {
       margin: 0 5px;
       font-size: 1.3em;
     }
-    #icon-home, #icon-about, #icon-teaching, #icon-research, #icon-cv {
+    #icon-home::after, #icon-about::after, #icon-teaching::after, #icon-research::after, #icon-cv::after {
       font-size: 20px;  /* Preferred icon size */
       /* transform: translateY(1px); */
     }
-    #icon-cv {
+    #icon-cv::after {
       /* font-size: 20px; */
       /* transform: scale(2); */
     }
@@ -147,24 +138,25 @@ nav {
     nav {
       padding: 10px 8px;
       margin-bottom: 10px;
+      padding-top: 5px;
     }
     nav .links > a {
       /* margin: 0 5px; */
       font-size: 1em;
       font-weight: 500;
     }
-    #icon-home, #icon-about, #icon-research, #icon-teaching, #icon-cv {
+    #icon-home::after, #icon-about::after, #icon-research::after, #icon-teaching::after, #icon-cv::after {
       font-size: 16px;  /* Preferred icon size */
       /* transform: translateY(1px); */
       /* content: ''; */
     }
-    #icon-teaching {
+    #icon-teaching::after {
       /* font-size: 15px; */
-      transform: translateY(1px);
+      /* transform: translateY(1px); */
     }
-    #icon-cv {
+    #icon-cv::after {
       /* font-size: 18px; */
-      transform: translateY(3px) scale(1.2);
+      transform: translateY(0px) scale(1.2);
     }
     .hover-underline-animation:after {
       height: 2px;
@@ -174,6 +166,7 @@ nav {
     nav {
       padding: 10px 4px;
       margin-bottom: 10px;
+      padding-top: 5px;
     }
     nav .links > a {
       /* margin: 0 5px; */
@@ -183,18 +176,18 @@ nav {
     .material-symbols-rounded {
       padding-right: 3px;
     }
-    #icon-home, #icon-about, #icon-research, #icon-teaching, #icon-cv {
+    #icon-home::after, #icon-about::after, #icon-research::after, #icon-teaching::after, #icon-cv::after {
       font-size: 16px;  /* Preferred icon size */
       /* transform: translateY(1px); */
       /* content: ''; */
     }
-    #icon-teaching {
+    #icon-teaching::after {
       /* font-size: 15px; */
-      transform: translateY(1px);
+      /* transform: translateY(1px); */
     }
-    #icon-cv {
+    #icon-cv::after {
       /* font-size: 18px; */
-      transform: translateY(3px) scale(1.2);
+      transform: translateY(0px) scale(1.2);
     }
     .hover-underline-animation:after {
       height: 1.5px;

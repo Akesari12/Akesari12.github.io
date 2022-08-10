@@ -24,11 +24,11 @@ export default function Navbar() {
           <h2 className={styles.fullname}>Aniket Kesari</h2>
         </Link>
         <div className={styles.links}>
-            <Link to="/" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconHome}>home</span>Home</Link>
-            <Link to="/about" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconAbout}>frame_person</span>About</Link>
-            <Link to="/research" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconResearch}>gavel</span>Research</Link>
-            <Link to="/teaching" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconTeaching}>edit_square</span>Teaching</Link>
-            <Link to="https://github.com/Akesari12/Akesari12.github.io/raw/dev/Aniket_Kesari_CV.pdf" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconCv}>history_edu</span>CV</Link>
+            <Link to="/" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconHome}/>Home</Link>
+            <Link to="/about" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconAbout}/>About</Link>
+            <Link to="/research" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconResearch}/>Research</Link>
+            <Link to="/teaching" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconTeaching}/>Teaching</Link>
+            <Link to="https://github.com/Akesari12/Akesari12.github.io/raw/dev/Aniket_Kesari_CV.pdf" className={styles.hoverUnderlineAnimation}><span className={styles.materialSymbolsRounded} id={styles.iconCv}/>CV</Link>
         </div>
     </nav>
   )
