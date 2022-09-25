@@ -1,6 +1,6 @@
 ---
 title: Predicting Cybersecurity Incidents Through Mandatory Disclosure Regulation
-publication: Illinois Journal of Law, Technology, and Policy (2022)
+publication: Illinois Journal of Law, Technology, and Policy 
 date: 2022-01-02
 thumb: ../../site-content/images/class_tree.png
 url-external: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3700243
