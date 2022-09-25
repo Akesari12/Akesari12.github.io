@@ -3,7 +3,7 @@ title: "Misinformation and Hate Speech: The Case of Anti-Asian Hate Speech Durin
 publication: "Journal of Online Trust and Safety"
 date: 2021-01-01
 collab: "Jae Yeon Kim"
-thumb: ../../site-content/images/btchinesesep
+thumb: ../../site-content/images/btchinesesep.png
 url-external: "https://tsjournal.org/index.php/jots/article/view/13/5"
 youtube: "https://youtu.be/mlCQJba3SVc"
 youtube-alt: "Journal of Online Trust and Safety Inaugural Issue Webinar"
