@@ -3,7 +3,7 @@ title: "Improving Traffic Safety Through Video Analysis in Jakarta, Indonesia"
 publication: "Neural Information Processing Systems (NeurIPS) AI For Social Good Workshop"
 date: 2021-01-01
 collab: "Joao Caldeira, Alex Fout, and Raesetje Sefala et. al."
-thumb: 
+thumb: ../../site-content/images/pluit.png
 url-external: "https://arxiv.org/abs/1812.01106"
 youtube: "http://www.youtube.com/watch?v=QiUb2Oy79Rg"
 youtube-alt: "NeurIPS 2018 AI For Social Good Workshop"

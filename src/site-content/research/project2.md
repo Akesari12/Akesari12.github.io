@@ -1,6 +1,6 @@
 ---
 title: "The Effect of State Data Breach Notification Laws on Medical Identity Theft"
-publication: Revise and Resubmit at Journal of Empirical Legal Studies 
+publication: Journal of Empirical Legal Studies (2022)
 date: 2022-01-01
 thumb: ../../site-content/images/Synthetic_Observed_US.jpg
 url-external: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3700248"

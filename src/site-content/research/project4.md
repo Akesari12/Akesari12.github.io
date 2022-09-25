@@ -3,7 +3,7 @@ title: "Trademark Search, Artificial Intelligence and the Role of the Private Se
 publication: "Berkeley Technology Law Journal"
 date: 2021-01-01
 collab: "Sonia Katyal"
-thumb: 
+thumb: ../../site-content/images/Fig 17 Exact Matches
 url-external: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3760112"
 youtube: 
 youtube-alt: 
