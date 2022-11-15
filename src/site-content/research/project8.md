@@ -4,7 +4,7 @@ publication: "ACM Symposium on Computer Science and Law"
 date: 2022-11-02
 collab: 
 thumb: ../../site-content/images/tpp_black.png
-url-external: 
+url-external: "https://dl.acm.org/doi/10.1145/3511265.3550437"
 youtube: 
 youtube-alt: 
 ---
