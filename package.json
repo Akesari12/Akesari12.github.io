@@ -27,7 +27,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-remove-root-p-tag": "^1.0.1",
     "gatsby-source-filesystem": "^4.17.0",
-    "gatsby-transformer-remark": "^5.17.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^4.17.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
