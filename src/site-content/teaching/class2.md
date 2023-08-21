@@ -4,7 +4,7 @@ course-level: Law
 years: "2021"
 url-external: https://bids.berkeley.edu/research/computational-social-science-training-program
 github:
-list-order: 2
+list-order: 3
 ---
 
 Clients increasingly want their lawyers to understand their products and services on a technical level. Regulators need to understand how their rules will be implemented in code. Lawyers increasingly need tools to automate the process of collecting, organizing, and making sense of impossibly large troves of information.

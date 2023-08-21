@@ -72,6 +72,11 @@ export default function About({ data } ) {
                 </div> */}
                 <div className={styles.workText}>
                   {/* <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3> */}
+                  <h4 className={ styles.workTitle}>Associate Professor</h4>
+                  <h4 className={ styles.degree}>Fordham Law School</h4>
+                </div>
+                <div className={styles.workText}>
+                  {/* <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3> */}
                   <h4 className={ styles.workTitle}>Postdoctoral Research Fellow</h4>
                   <h4 className={ styles.degree}>NYU Information Law Institute</h4>
                 </div>
