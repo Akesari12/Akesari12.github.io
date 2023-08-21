@@ -2,7 +2,7 @@
 title: "An Image Analysis Approach to Trademark Congestion and Depletion"
 publication: "International Conference on Artificial Intelligence and Law - 2023"
 date: 2023-06-23
-collab: 
+collab: Amit Haim
 thumb: ../../site-content/images/density_all_classes_10.png
 url-external: 
 youtube: 
