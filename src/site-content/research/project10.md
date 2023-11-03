@@ -4,7 +4,7 @@ publication: "International Conference on Artificial Intelligence and Law - 2023
 date: 2023-06-23
 collab: Amit Haim
 thumb: ../../site-content/images/density_all_classes_10.png
-url-external: 
+url-external: "https://dl.acm.org/doi/10.1145/3594536.3595126"
 youtube: 
 youtube-alt: 
 ---
