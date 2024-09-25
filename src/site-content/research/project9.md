@@ -1,7 +1,7 @@
 ---
 title: "Do Data Breach Notification Laws Work?"
-publication: "Job Market Paper"
-date: 2022-12-31
+publication: "NYU Journal of Legislation and Public Policy"
+date: 2024-02-20
 collab: 
 thumb: ../../site-content/images/ag_notice_all.png
 url-external: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4164674
