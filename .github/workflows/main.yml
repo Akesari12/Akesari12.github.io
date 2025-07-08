@@ -24,10 +24,10 @@ jobs:
       - uses: actions/checkout@v2
 
       # Create environment variable for Node
-      - name: Create .env file
-        uses: SpicyPizza/create-envfile@v1
-        with:
-          envkey_GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
+      # - name: Create .env file
+      #   uses: SpicyPizza/create-envfile@v1
+      #   with:
+      #     envkey_GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
 
       #This is required if public is in .gitignore, which it likely is
       - name: Create public folder for build output
