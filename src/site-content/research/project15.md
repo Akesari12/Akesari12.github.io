@@ -2,7 +2,7 @@
 title: "Explainy: A Toolkit for Legal-XAI"
 publication: "International Conference on AI and Law - 2025"
 date: 2025-06-18
-collab: 
+collab: Elliott Ash, Stefan Bechtold, Mauro Luzzatto
 thumb: ../../site-content/images/explainy.png
 url-external: 
 youtube: 

@@ -2,7 +2,7 @@
 title: "Federal Open Data as An Artificial Intelligence Resource"
 publication: "George Washington Journal of Law and Technology"
 date: 2025-06-24
-collab: 
+collab: Erik Stallman
 thumb: 
 url-external: https://gwjolt.org/files/volume_1/GW_JOLT_1-1_Kesari.pdf
 youtube: 

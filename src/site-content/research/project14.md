@@ -2,7 +2,7 @@
 title: "From Legal Text to Tech Specs: Generative AI's Interpretation of Consent in Privacy Law"
 publication: "International Conference on AI and Law - 2025"
 date: 2025-06-17
-collab: 
+collab: Travis Breaux, Tom Norton, Sarah Santos, Anmol Singhal
 thumb: ../../site-content/images/use_cases.png
 url-external: 
 youtube: 
