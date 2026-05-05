@@ -20,7 +20,7 @@ export default function Teaching({ data }) {
           <>
           <div className={styles.projectBlock}>
             <div className={styles.projectInfo}>
-              { (project.frontmatter.github !== null )
+              { (project.frontmatter.url_external !== null )
                   ? <a className={ styles.projectTitle } href={ project.frontmatter.url_external } target="_blank" rel="noopener noreferrer">{ project.frontmatter.title }</a>
                   : <a className={ styles.projectTitleNoLink }>{ project.frontmatter.title }</a>
               }
