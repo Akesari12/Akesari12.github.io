@@ -4,7 +4,7 @@ course-level: Law
 years: "2025"
 url-external:
 github:
-list-order: 1
+list-order: 2
 ---
 
 Cybersecurity is a rapidly growing area of the economy - the Bureau of Labor Statistics estimates that the number of new cybersecurity jobs will grow by over 30\% over the next decade, as compared to just 3\% on average for jobs in other sectors. Law firms are creating specialized privacy and cybersecurity practice groups, and regulators at the state and federal level are devoting substantial resources to cybersecurity standards and enforcement. Cybersecurity has become so pressing because it increasingly penetrates nearly all aspects of the human experience.
