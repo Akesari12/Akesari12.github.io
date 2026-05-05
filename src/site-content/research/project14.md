@@ -4,7 +4,7 @@ publication: "International Conference on AI and Law - 2025"
 date: 2025-06-17
 collab: Travis Breaux, Tom Norton, Sarah Santos, Anmol Singhal
 thumb: ../../site-content/images/use_cases.png
-url-external: 
+url-external: https://dl.acm.org/doi/full/10.1145/3769126.3769241
 youtube: 
 youtube-alt: 
 ---

@@ -4,7 +4,7 @@ publication: "International Conference on AI and Law - 2025"
 date: 2025-06-18
 collab: Elliott Ash, Stefan Bechtold, Mauro Luzzatto
 thumb: ../../site-content/images/explainy.png
-url-external: 
+url-external: https://dl.acm.org/doi/10.1145/3769126.3769240
 youtube: 
 youtube-alt: 
 ---
