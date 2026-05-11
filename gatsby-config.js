@@ -8,9 +8,9 @@ module.exports = {
   pathPrefix: "/aniket-test-site",
   /* Your site config here */
   plugins: [
-    // 'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-transformer-remark`,

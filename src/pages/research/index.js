@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby'
 import React from 'react'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/Layout'
 import * as styles from "../../styles/research.module.css"
 import Head from '../../components/Head'
@@ -37,16 +37,16 @@ export default function Research({ data }) {
             <section key={year} className={styles.yearGroup}>
               <h2 className={styles.yearHeading}>{year}</h2>
               {items.map(project => {
-                const hasThumb = project.frontmatter.thumb && project.frontmatter.thumb.childImageSharp
+                const thumbImage = project.frontmatter.thumb && getImage(project.frontmatter.thumb)
                 return (
                   <article
                     key={project.id}
-                    className={hasThumb ? styles.entry : styles.entryNoThumb}
+                    className={thumbImage ? styles.entry : styles.entryNoThumb}
                   >
-                    {hasThumb && (
+                    {thumbImage && (
                       <div className={styles.thumb}>
-                        <Img
-                          fluid={project.frontmatter.thumb.childImageSharp.fluid}
+                        <GatsbyImage
+                          image={thumbImage}
                           alt=""
                           style={{ height: "100%" }}
                           imgStyle={{ objectFit: "cover" }}
@@ -108,7 +108,7 @@ export const query = graphql`
   query ResearchQuery {
     allMarkdownRemark(
       filter: { frontmatter: { publication: { ne: null } } }
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { frontmatter: { date: DESC } }
     ) {
       nodes {
         frontmatter {
@@ -119,9 +119,7 @@ export const query = graphql`
           url_external
           thumb {
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(width: 320, placeholder: BLURRED, layout: CONSTRAINED)
             }
           }
         }

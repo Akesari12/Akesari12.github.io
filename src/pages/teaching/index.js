@@ -68,7 +68,7 @@ export const query = graphql`
   query TeachingQuery {
     allMarkdownRemark(
       filter: { frontmatter: { course_level: { ne: null } } }
-      sort: { order: ASC, fields: frontmatter___list_order }
+      sort: { frontmatter: { list_order: ASC } }
     ) {
       nodes {
         frontmatter {

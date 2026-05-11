@@ -2,7 +2,7 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Head from "../components/Head"
 
 const researchAreas = [
@@ -16,6 +16,7 @@ const researchAreas = [
 export default function Home({ data }) {
   const home = data.home.edges[0].node
   const recent = data.recent.nodes
+  const headshotImage = data.headshot && getImage(data.headshot)
 
   return (
     <>
@@ -48,10 +49,10 @@ export default function Home({ data }) {
               <a href="mailto:akesari@fordham.edu">Email →</a>
             </div>
           </div>
-          {data.headshot && (
+          {headshotImage && (
             <div className={styles.headshot}>
-              <Img
-                fluid={data.headshot.childImageSharp.fluid}
+              <GatsbyImage
+                image={headshotImage}
                 className={styles.headshotImg}
                 alt="Aniket Kesari"
               />
@@ -68,14 +69,14 @@ export default function Home({ data }) {
           </div>
           <div className={styles.previewGrid}>
             {recent.map(project => {
-              const hasThumb = project.frontmatter.thumb && project.frontmatter.thumb.childImageSharp
+              const thumbImage = project.frontmatter.thumb && getImage(project.frontmatter.thumb)
               const initial = project.frontmatter.title ? project.frontmatter.title.charAt(0) : "•"
               return (
                 <article key={project.id} className={styles.previewCard}>
-                  {hasThumb ? (
+                  {thumbImage ? (
                     <div className={styles.previewThumb}>
-                      <Img
-                        fluid={project.frontmatter.thumb.childImageSharp.fluid}
+                      <GatsbyImage
+                        image={thumbImage}
                         alt=""
                         style={{ height: "100%" }}
                         imgStyle={{ objectFit: "cover" }}
@@ -114,14 +115,9 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query HomeInfoQuery {
-    headshot: file(
-      childImageSharp: { fluid: {} }
-      relativePath: { eq: "images/headshot.png" }
-    ) {
+    headshot: file(relativePath: { eq: "images/headshot.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(width: 280, placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
     home: allMarkdownRemark(filter: { frontmatter: { title: { eq: "home" } } }) {
@@ -137,7 +133,7 @@ export const query = graphql`
     }
     recent: allMarkdownRemark(
       filter: { frontmatter: { publication: { ne: null } } }
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { frontmatter: { date: DESC } }
       limit: 4
     ) {
       nodes {
@@ -149,9 +145,7 @@ export const query = graphql`
           publication
           thumb {
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(width: 320, placeholder: BLURRED, layout: CONSTRAINED)
             }
           }
         }
