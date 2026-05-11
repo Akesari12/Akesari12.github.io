@@ -1,120 +1,98 @@
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import React from 'react'
 import Layout from '../components/Layout'
 import * as styles from "../styles/about.module.css"
-import Img from 'gatsby-image'
 import Head from '../components/Head'
 
-export default function About({ data } ) {
-  
-  const queryAbout = data.allMarkdownRemark.nodes[0];
+const education = [
+  {
+    year: "2022",
+    school: "Yale University",
+    detail: "J.D., School of Law",
+    logo: "/logo_yale.svg",
+    logoClass: "logoYale",
+    href: "https://law.yale.edu/",
+  },
+  {
+    year: "2020",
+    school: "UC Berkeley",
+    detail: "Ph.D., Jurisprudence and Social Policy, School of Law",
+    logo: "/logo_berkeley.svg",
+    logoClass: "logoBerkeley",
+    href: "https://www.law.berkeley.edu/",
+  },
+  {
+    year: "2014",
+    school: "Rutgers University",
+    detail: "B.A., Political Science and History",
+    logo: "/logo_rutgers.svg",
+    logoClass: "logoRutgers",
+    href: "https://newbrunswick.rutgers.edu/",
+  },
+]
+
+const positions = [
+  { period: "Present", title: "Associate Professor", org: "Fordham Law School" },
+  { period: "2022–2024", title: "Postdoctoral Research Fellow", org: "NYU Information Law Institute" },
+  { period: "2023", title: "Visiting Postdoc", org: "ETH Zurich, Center for Law and Economics" },
+  { period: "2020–2022", title: "Postdoctoral Fellow", org: "UC Berkeley Social Science Data Lab (D-Lab)" },
+  { period: "2018", title: "Technology Policy Intern", org: "GitHub" },
+  { period: "2017", title: "Google Policy Fellow", org: "Engine" },
+  { period: "2016", title: "Data Science for Social Good Fellow", org: "University of Chicago" },
+]
+
+export default function About({ data }) {
+  const about = data.allMarkdownRemark.nodes[0]
 
   return (
     <>
-    <Head title="About"/>
-    <Layout pageKey={'about'}>
-          <h2 className={styles.pageTitle}>About</h2>
-    <div>
-        {/* <h2>About Ani</h2> */}
-        {/* <h3>Education</h3> */}
-        <div className={ styles.jobs }>
-          <div className={styles.gradIcon}>school</div>
-            <div className={styles.timeline}>
-            <div className={styles.schools}>
-                <div className={styles.schoolsLogo}>
-                  <a href="https://law.yale.edu/" target="_blank" rel="noopener noreferrer">
-                    <img id={styles.logoYale} className={styles} src="/logo_yale.svg" />    
-                  </a>
-                </div>
-                <div className={styles.schoolsText}>
-                  <h3 className={ styles.schoolName } style={{paddingRight: '100px'}}>Yale University</h3>
-                  <h4 className={ styles.year}>2022</h4>
-                  <h4 className={ styles.degree}>J.D., School of Law</h4>
-                </div>
-              </div>
-              <div className={styles.schools}>
-                <div className={styles.schoolsLogo}>
-                  <a href="https://www.law.berkeley.edu/" target="_blank" rel="noopener noreferrer">
-                    <img id={styles.logoBerkeley} className={styles} src="/logo_berkeley.svg" />    
-                  </a>
-                </div>
-                <div className={styles.schoolsText}>
-                  <h3 className={ styles.schoolName }>UC Berkeley</h3>
-                  <h4 className={ styles.year}>2020</h4>
-                  <h4 className={ styles.degree}>Ph.D. Jurisprudence and Social Policy, School of Law</h4>
-                </div>
-              </div>
-              <div className={styles.schools}>  
-                <div className={styles.schoolsLogo}>
-                  <a href="https://newbrunswick.rutgers.edu/" target="_blank" rel="noopener noreferrer">
-                    <img id={styles.logoRutgers} src="/logo_rutgers.svg" />    
-                  </a>
-                </div>
-                <div className={styles.schoolsText}>
-                  <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3>
-                  <h4 className={ styles.year}>2014</h4>
-                  <h4 className={ styles.degree}>B.A. Political Science and History</h4>
-                </div>
-              </div>
+      <Head title="About" />
+      <Layout pageKey="about">
+        <header className={styles.pageHeader}>
+          <h1 className={styles.pageTitle}>About</h1>
+        </header>
+        <div className={styles.container}>
+          <div
+            className={styles.bio}
+            dangerouslySetInnerHTML={{ __html: about.html }}
+          />
 
-
-            
-            {/* <div className={styles.schools}></div> */}
-            {/* <div className={styles.jobs}>hiiiii</div> */}
-          </div>
-          <div className={styles.workIcon}>business_center</div>
-          <div className={styles.workTimeline}>
-              {/* <div className={styles.schools}>   */}
-                {/* <div className={styles.schoolsLogo}>
-                  <a href="https://newbrunswick.rutgers.edu/" target="_blank" rel="noopener noreferrer">
-                    <img id={styles.logoRutgers} src="logo_rutgers.svg" />    
+          <section className={styles.section}>
+            <h2 className={styles.sectionTitle}>Education</h2>
+            {education.map(e => (
+              <div key={e.year} className={styles.entry}>
+                <div className={styles.logoWrap}>
+                  <a href={e.href} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={e.logo}
+                      alt={`${e.school} logo`}
+                      className={`${styles.logo} ${styles[e.logoClass]}`}
+                    />
                   </a>
-                </div> */}
-                <div className={styles.workText}>
-                  {/* <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3> */}
-                  <h4 className={ styles.workTitle}>Associate Professor</h4>
-                  <h4 className={ styles.degree}>Fordham Law School</h4>
                 </div>
-                <div className={styles.workText}>
-                  {/* <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3> */}
-                  <h4 className={ styles.workTitle}>Postdoctoral Research Fellow</h4>
-                  <h4 className={ styles.degree}>NYU Information Law Institute</h4>
+                <div className={styles.entryYear}>{e.year}</div>
+                <div className={styles.entryBody}>
+                  <div className={styles.entryPrimary}>{e.school}</div>
+                  <div className={styles.entrySecondary}>{e.detail}</div>
                 </div>
-                <div className={styles.workText}>
-                  {/* <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3> */}
-                  <h4 className={ styles.workTitle}>Visiting Postdoc</h4>
-                  <h4 className={ styles.degree}>ETH Zurich Center for Law and Economics</h4>
+              </div>
+            ))}
+          </section>
+
+          <section className={styles.section}>
+            <h2 className={styles.sectionTitle}>Positions</h2>
+            {positions.map(p => (
+              <div key={`${p.period}-${p.title}`} className={styles.entryNoLogo}>
+                <div className={styles.entryYear}>{p.period}</div>
+                <div className={styles.entryBody}>
+                  <div className={styles.entryPrimary}>{p.title}</div>
+                  <div className={styles.entrySecondary}>{p.org}</div>
                 </div>
-                <div className={styles.workText}>
-                  {/* <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3> */}
-                  <h4 className={ styles.workTitle}>Postdoctoral Fellow</h4>
-                  <h4 className={ styles.degree}>UC Berkeley Social Science Data Lab</h4>
-                </div>
-                <div className={styles.workText}>
-                  {/* <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3> */}
-                  <h4 className={ styles.workTitle}>Technology Policy Intern</h4>
-                  <h4 className={ styles.degree}>GitHub</h4>
-                </div>
-                <div className={styles.workText}>
-                  {/* <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3> */}
-                  <h4 className={ styles.workTitle}>Google Policy Fellow</h4>
-                  <h4 className={ styles.degree}>Engine</h4>
-                </div>
-                <div className={styles.workText}>
-                  {/* <h3 className={ styles.schoolName } style={{paddingRight: '70px'}}>Rutgers University</h3> */}
-                  <h4 className={ styles.workTitle}>Data Science for Social Good Fellow</h4>
-                  <h4 className={ styles.degree}>University of Chicago</h4>
-                </div>
-              {/* </div> */}
-            {/* <div className={styles.schools}></div> */}
-            {/* <div className={styles.jobs}>hiiiii</div> */}
-          </div>
+              </div>
+            ))}
+          </section>
         </div>
-        {/* <img src="../site-content/images/headshot.png" alt="headshot" style={{maxWidth: '400px', borderRadius: '10px'}} /> */}
-        <div className={styles.html} dangerouslySetInnerHTML={{ __html: queryAbout.html }} />
-        {/* hiiiii */}
-    </div>
-    </Layout>
+      </Layout>
     </>
   )
 }
@@ -122,7 +100,7 @@ export default function About({ data } ) {
 export const query = graphql`
   query AboutQuery {
     allMarkdownRemark(
-      filter: {frontmatter: {title: {eq: "about"}}}
+      filter: { frontmatter: { title: { eq: "about" } } }
     ) {
       nodes {
         frontmatter {

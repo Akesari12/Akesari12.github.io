@@ -43,8 +43,8 @@ module.exports = {
     resolve: `gatsby-plugin-google-fonts`,
     options: {
       fonts: [
-        `Anek Tamil\:100,200,300,400,500,600,700,800`,
-        `Material Symbols Rounded\:300,400,500,600,700,800`,
+        `Newsreader\:400,500,600,700`,
+        `IBM Plex Sans\:400,500,600,700`,
       ],
       display: 'swap'
     }
